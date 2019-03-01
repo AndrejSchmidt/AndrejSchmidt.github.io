@@ -1,22 +1,50 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0;
 }
-nav ul, footer ul {
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 95%;
+    overflow: auto;
+}
+nav li a {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.7em;
+    display: block;
+    /*text-align:center;*/
+    color: #000;
+    /*padding-left: 50px;*/
+    padding: 40px;
+    text-decoration: none;
+}
+nav li a.active {
+    background-color: #91A8D0;
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 a {
     text-decoration: none;
     color: #999;
 }
-a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 h1 {
@@ -29,8 +57,14 @@ p {
     color: #333;
 }
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    text-align: center;
 }
 
 ul.posts { 
@@ -40,4 +74,9 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+.content {
+    margin-left:25%;
+    padding:5px 30px;
+    height:1000px;
 }

@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html>
+
+<head>
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+{% assign current = page.url | downcase | split: '/' %}
+
+<body>
+	<nav>
+		<ul>
+			<li><a href='/' {% if current.size == 0 %} class='active' {% endif %}>Domov</a></li>
+			<li><a href='/about' {% if current[1] == 'about' %} class='active' {% endif %}>Bio</a></li>
+			<li><a href='/cv' {% if current[1] == 'cv' %} class='active' {% endif %}>CV</a></li>
+			<li><a href='/blog' {% if current[1] == 'blog' %} class='active' {% endif %}>Blog</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+
+		{{ content }}
+
+	</div><!-- /.container -->
+	<footer>
+		<ul>
+			<li><a href="mailto:hankquinlanhub@gmail.com">e-mail</a></li>
+			<li><a href="https://github.com/hankquinlan">github.com/AndrejSchmidt</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
