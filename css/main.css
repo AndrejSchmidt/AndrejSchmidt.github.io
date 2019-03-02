@@ -11,17 +11,21 @@ footer ul li {
     display: inline;
     margin-right: 20px;
 }
+nav {
+    width: 10%;
+}
 nav ul {
+    border-radius: 50px;
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    width: 25%;
+    width: 15%;
     background-color: #f1f1f1;
     position: fixed;
-    height: 95%;
     overflow: auto;
 }
 nav li a {
+    /*border-radius: 50px;*/
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.7em;
     display: block;
@@ -37,22 +41,28 @@ nav li a.active {
 }
 
 nav li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: rgb(155, 155, 155);
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: rgb(155, 155, 155);
+}
+ul.posts li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 footer a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    font-size: 2em;
+    padding-bottom: 15px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
 }
@@ -73,10 +83,18 @@ ul.posts {
 }
 
 ul.posts li {
+    border-radius: 50px;
+    padding: 25px 50px;
+    background-color: #f1f1f1;
     list-style: none;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 .content {
-    margin-left:25%;
+    margin-left:15%;
     padding:5px 30px;
     height:1000px;
+}
+time {
+    font-size: .7em;
+
 }

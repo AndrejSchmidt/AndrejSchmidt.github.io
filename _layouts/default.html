@@ -13,8 +13,8 @@
 	<nav>
 		<ul>
 			<li><a href='/' {% if current.size == 0 %} class='active' {% endif %}>Domov</a></li>
-			<li><a href='/about' {% if current[1] == 'about' %} class='active' {% endif %}>Bio</a></li>
-			<li><a href='/cv' {% if current[1] == 'cv' %} class='active' {% endif %}>CV</a></li>
+			<li><a href='/bio' {% if current[1] == 'bio' %} class='active' {% endif %}>O mne</a></li>
+			<li><a href='/cv' {% if current[1] == 'cv' %} class='active' {% endif %}>Profesné záujmy</a></li>
 			<li><a href='/blog' {% if current[1] == 'blog' %} class='active' {% endif %}>Blog</a></li>
 		</ul>
 	</nav>
@@ -22,7 +22,7 @@
 
 		{{ content }}
 
-	</div><!-- /.container -->
+	</div>
 	<footer>
 		<ul>
 			<li><a href="mailto:hankquinlanhub@gmail.com">e-mail</a></li>
