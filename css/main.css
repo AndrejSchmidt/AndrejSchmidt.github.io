@@ -17,7 +17,6 @@ nav ul {
     margin: 10px;
     padding: 0;
     width: 170px;
-    /*width: 15%;*/
     background-color: #f1f1f1;
     position: fixed;
     overflow: auto;
@@ -86,7 +85,7 @@ ul.posts li {
 }
 .content {
     margin-left:170px;
-    padding:5px 30px;
+    padding:10px 30px;
     height:1000px;
 }
 time {
