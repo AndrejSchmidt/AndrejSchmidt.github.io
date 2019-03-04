@@ -10,14 +10,13 @@
 {% assign current = page.url | downcase | split: '/' %}
 
 <body>
-	<nav>
-		<ul>
-			<li><a href='/' {% if current.size == 0 %} class='active' {% endif %}>Domov</a></li>
-			<li><a href='/bio' {% if current[1] == 'bio' %} class='active' {% endif %}>O mne</a></li>
-			<li><a href='/cv' {% if current[1] == 'cv' %} class='active' {% endif %}>Profesné záujmy</a></li>
-			<li><a href='/blog' {% if current[1] == 'blog' %} class='active' {% endif %}>Blog</a></li>
-		</ul>
-	</nav>
+	<ul class="navigation">
+		<li><img src="/assets/images/logo-biela-1000px.png" alt="logo" height="250" width="250"></li>
+		<li><a href='/' {% if current.size == 0 %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>Domov</a></li>
+		<li><a href='/bio' {% if current[1] == 'bio' %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>O mne</a></li>
+		<li><a href='/cv' {% if current[1] == 'cv' %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>Profesné záujmy</a></li>
+		<li><a href='/blog' {% if current[1] == 'blog' %} class="navigation-anchor-active"  {% else %} class="navigation-anchor" {% endif %}>Blog</a></li>
+	</ul>
 	<div class="content">
 
 		{{ content }}
@@ -25,8 +24,8 @@
 	</div>
 	<footer>
 		<ul>
-			<li><a href="mailto:hankquinlanhub@gmail.com">e-mail</a></li>
-			<li><a href="https://github.com/hankquinlan">github.com/AndrejSchmidt</a></li>
+			<!-- <li><a href="mailto:">e-mail</a></li> -->
+			<li><a href="https://github.com/AndrejSchmidt">github.com/AndrejSchmidt</a></li>
 		</ul>
 	</footer>
 </body>
