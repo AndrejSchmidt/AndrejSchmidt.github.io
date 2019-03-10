@@ -11,11 +11,17 @@
 
 <body>
 	<ul class="navigation">
-		<li><img src="/assets/images/logo-biela-1000px.png" alt="logo" height="250" width="250"></li>
-		<li><a href='/' {% if current.size == 0 %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>Domov</a></li>
-		<li><a href='/bio' {% if current[1] == 'bio' %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>O mne</a></li>
-		<li><a href='/cv' {% if current[1] == 'cv' %} class="navigation-anchor-active" {% else %} class="navigation-anchor" {% endif %}>Profesné záujmy</a></li>
-		<li><a href='/blog' {% if current[1] == 'blog' %} class="navigation-anchor-active"  {% else %} class="navigation-anchor" {% endif %}>Blog</a></li>
+		<li><img src="/assets/images/logo-biela-1000px.png" class="logo" alt="logo" height="250" width="250"></li>
+		<li><a href='/' {% if current.size == 0 %} class="navigation-anchor-active" {% else %} class="navigation-anchor"
+				{% endif %}>Domov</a></li>
+		<li><a href='/o_mne' {% if current[1] == 'o_mne' %} class="navigation-anchor-active" {% else %}
+				class="navigation-anchor" {% endif %}>O mne</a></li>
+		<li><a href='/profesne_zaujmy' {% if current[1] == 'profesne_zaujmy' %} class="navigation-anchor-active" {% else %}
+				class="navigation-anchor" {% endif %}>Profesné záujmy</a></li>
+		<li><a href='/blog' {% if current[1] == 'blog' %} class="navigation-anchor-active" {% else %}
+				class="navigation-anchor" {% endif %}>Blog</a></li>
+		<li><a href='/webove_publikovanie' {% if current[1] == 'webove_publikovanie' %} class="navigation-anchor-active" {% else %}
+				class="navigation-anchor" {% endif %}>Webové publikovanie</a></li>
 	</ul>
 	<div class="content">
 

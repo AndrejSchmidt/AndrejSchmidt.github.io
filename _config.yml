@@ -1,3 +1,9 @@
 name: Andrej Schmidt
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+collections:
+  assignments:
+    output: true
+    permalink: /webove_publikovanie/:title
+plugins:
+  - jemoji
