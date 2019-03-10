@@ -46,7 +46,7 @@ Príspevky blogu majú vlastný layout obsahujúci dátum zverejnenia a sekcia v
 
 * Plugin
 
-    Sídlo používa plugin [Jemoji](https://github.com/jekyll/jemoji), ktorý umožňuje používať emoji 
+    Sídlo používa plugin [Jemoji](https://github.com/jekyll/jemoji), ktorý umožňuje používať GitHub-flavored emoji, ktoré fungujú aj na GitHub Pages :wink:.
 
 
 ### Štýly
