@@ -19,3 +19,5 @@ Na transformáciu treba použiť to_xhtml.bat, v ktorom upravíme cestu k Saxon 
 
 ### Transformácia do PDF
 Pri transformácii do pdf sa využíva to_pdf.bat, ktorý na vstupe dostane XML s prezentáciou a XSL transformáciami, z ktorých následne vytvorí dočasný XML súbor, ktorý pomocou xep.bat prevedia na pdf. Pri prípadnom transformovaní sa treba uistiť, že všetky cesty v .bat súboroch ukazujú na požadované súbory. Samotná prezentácia je veľmi jednoduchá, využíva základné XSL-FO prvky na reprezentáciu hlavných častí prezentácie.
+
+.
